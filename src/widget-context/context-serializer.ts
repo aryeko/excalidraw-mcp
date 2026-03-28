@@ -66,6 +66,10 @@ function describeRecentEdits(
 export function serializeWidgetContext(state: WidgetContextState): ModelContextPayload {
   const contentParts: string[] = [];
 
+  if (state.checkpointId) {
+    contentParts.push(`Checkpoint: ${state.checkpointId}`);
+  }
+
   if (state.selection?.elements.length) {
     contentParts.push(
       state.selection.elements.length === 1

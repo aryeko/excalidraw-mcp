@@ -44,7 +44,7 @@ describe("widget context serializer", () => {
     expect(serializeWidgetContext(state)).toEqual({
       content: [{
         type: "text",
-        text: 'Selected 1 element.\n\nElements:\n- rectangle (r1)\n\nRecent comments:\n- "make this clearer"\n\nRecent edits:\n- User edited diagram. Moved/resized: r1 → (20,30) 100x80',
+        text: 'Checkpoint: cp-999\n\nSelected 1 element.\n\nElements:\n- rectangle (r1)\n\nRecent comments:\n- "make this clearer"\n\nRecent edits:\n- User edited diagram. Moved/resized: r1 → (20,30) 100x80',
       }],
       structuredContent: {
         checkpointId: "cp-999",
